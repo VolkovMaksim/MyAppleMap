@@ -61,9 +61,6 @@ extension ViewController: CLLocationManagerDelegate {
         annotations.coordinate = location.coordinate
         mapView.addAnnotation(annotations)
         
-        // вывод текущих координат в консоль для отслеживания
-        print(location.coordinate)
-        
         let camera = MKMapCamera()
         camera.centerCoordinate.latitude = location.coordinate.latitude
         camera.centerCoordinate.longitude = location.coordinate.longitude
